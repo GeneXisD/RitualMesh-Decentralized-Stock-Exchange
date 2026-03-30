@@ -1,32 +1,24 @@
 # RitualMesh Decentralized Stock Exchange
 
-RitualMesh Decentralized Stock Exchange (R-DSE) is a modular, peer-to-peer exchange stack designed around distributed order propagation, matching, auditability, and optional clearinghouse settlement.
+RitualMesh DSE is a dual-host, heterogeneous, decentralized financial infrastructure project centered on a canonical ClearingHouse-based federated node and a secondary validation, synchronization, and orchestration host.
 
-## Current focus
-- Establish clean repository structure
-- Stand up Ubuntu 14.04 build environment for legacy ClearingHouse work
-- Separate modern mesh services from legacy dependencies
-- Document architecture, security, and deployment from day one
+## Current architecture
+- **Intel host + Ubuntu 14.04** = authoritative federated node
+- **M4 Mac** = secondary ClearingHouse-capable support host
+- **Android legacy shell stack** = optional mobile control / helper node
 
-## Repository map
-- `docs/` architecture, security, deployment, operations, clearinghouse notes
-- `scripts/` bootstrap, VM setup, builds, dev helpers, ops tasks
-- `infra/` VM and emulator definitions for Apple Silicon and Intel Macs
-- `services/` exchange node roles
-- `libs/` shared code and cryptographic identity helpers
-- `configs/` example configuration and legacy OS notes
-- `tests/` smoke and integration checks
+## Core design
+- canonical primary execution on the Intel-hosted Ubuntu 14.04 environment
+- secondary validation, synchronization, and future failover support on the M4
+- reserved `scripts/sync/` and `scripts/verify/` foundations for dual-host coordination
+- future liquidity / reverse-repo style design space documented as an extension layer
+- future bridge and market-interface architecture documented separately from the core node bring-up
 
-## Host strategy
-- **Mac Pro M4 (Apple Silicon):** use UTM/QEMU for x86_64 Ubuntu 14.04 images when legacy x86 userspace is required
-- **Intel Mac 2016:** use VMware Fusion for the most compatible Ubuntu 14.04 build VM
+## Immediate priority
+1. bring up the canonical ClearingHouse federated node on Ubuntu 14.04
+2. record all users, ports, paths, snapshots, and manual edits
+3. compare and mirror from the M4 secondary host
+4. stabilize the primary build before implementing deeper extensions
 
-## First milestones
-1. Create scaffold
-2. Bring up Ubuntu 14.04 on Intel Mac
-3. Snapshot working VM before package installs
-4. Build legacy ClearingHouse dependencies
-5. Keep mesh services isolated from legacy stack
-
-## Status
-Scaffold initialized.
+## Principle
+The primary node determines canonical truth. The secondary host protects continuity, validates state, and prepares future orchestration.

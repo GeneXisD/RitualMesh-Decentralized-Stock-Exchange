@@ -1,3 +1,3 @@
 # Tests
 
-Start with smoke tests that validate repo assumptions, config presence, and service wiring.
+Add smoke and integration checks as real services come online.

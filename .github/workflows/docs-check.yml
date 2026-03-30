@@ -12,6 +12,11 @@ jobs:
       - name: Verify key docs exist
         run: |
           test -f README.md
+          test -f FEDERATED_NODE.md
+          test -f CLEARINGHOUSE_CLUSTER.md
+          test -f REPO_MAP.md
           test -f docs/PROJECT_STATUS.md
           test -f docs/ROADMAP.md
-          test -f docs/clearinghouse/build-notes.md
+          test -f docs/architecture/ritualmesh-system.md
+          test -f docs/ops/service-map.md
+          test -f docs/build/ubuntu-14.04-primary.md

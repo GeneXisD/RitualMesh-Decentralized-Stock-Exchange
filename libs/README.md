@@ -1,3 +1,3 @@
 # Shared Libraries
 
-Common helpers, cryptographic identity helpers, message schemas, and reusable logic.
+Common helpers, schemas, and reusable logic will live here.

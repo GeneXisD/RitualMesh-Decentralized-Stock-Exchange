@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 set -euo pipefail
-
-echo "[+] Initializing git hooks placeholder and runtime dirs"
-mkdir -p runtime/logs runtime/data
-: > runtime/logs/.gitkeep
-: > runtime/data/.gitkeep
-chmod -R u+rwX scripts || true
-
-echo "[+] Done"
+mkdir -p runtime/logs runtime/state runtime/exports
+touch runtime/logs/.gitkeep runtime/state/.gitkeep runtime/exports/.gitkeep
+echo "[+] runtime directories ready"

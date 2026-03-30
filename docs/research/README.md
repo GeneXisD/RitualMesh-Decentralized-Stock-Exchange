@@ -1,3 +1,3 @@
 # Research
 
-Store reference notes, protocol ideas, exchange mechanics, and compatibility findings here.
+Use this area for external references, future design questions, and experimental notes that should not be confused with canonical build instructions.

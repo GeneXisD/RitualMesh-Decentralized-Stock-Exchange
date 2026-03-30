@@ -1,3 +1,5 @@
 # Services
 
-Each node role should be isolated so that legacy ClearingHouse work does not contaminate newer exchange services.
+This area is for service-level implementation notes and future runtime layout.
+
+The project should keep architectural intent separated from service bring-up details.

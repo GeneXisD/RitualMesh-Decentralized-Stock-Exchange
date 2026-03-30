@@ -1,23 +1,31 @@
 # Roadmap
 
-## Phase 0 - Bootstrap
-- Repository scaffold
-- Host strategy for Intel + Apple Silicon
-- Legacy Ubuntu 14.04 environment
+## Phase 0 — Foundation
+- define topology
+- define host roles
+- define operational docs
+- reserve sync/verify structure
 
-## Phase 1 - Clearinghouse Baseline
-- Build legacy dependencies
-- Capture patches and package versions
-- Export reproducible VM notes
+## Phase 1 — Canonical Primary Bring-Up
+- build ClearingHouse on Intel Ubuntu 14.04
+- record ports, users, paths
+- validate startup order
+- snapshot milestones
 
-## Phase 2 - Core Mesh Roles
-- Gateway node stub
-- Matching node stub
-- Settlement node stub
-- Audit node stub
-- Clearinghouse node stub
+## Phase 2 — Secondary Validation
+- mirror config to M4
+- compare state
+- verify port alignment
+- verify service ownership
 
-## Phase 3 - Integration
-- Order flow simulation
-- Signed trade lifecycle
-- Local cluster smoke testing
+## Phase 3 — Hardened Operations
+- finalize failover notes
+- lock down trust model
+- refine audit tools
+- document recovery path
+
+## Phase 4 — Extended Architecture
+- reverse-repo style liquidity layer
+- market bridge / exchange-facing reference layer
+- mobile legacy console integration
+- future bridge and multi-ledger research
