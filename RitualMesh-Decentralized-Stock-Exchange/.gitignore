@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+
+# env
+.env
+.env.*
+*.local
+
+# editors
+.vscode/
+.idea/
+
+# runtime
+runtime/logs/*
+!runtime/logs/.gitkeep
+runtime/data/*
+!runtime/data/.gitkeep
+
+# build
+build/
+dist/
+*.qcow2
+*.vmdk
+*.iso
+*.img
+*.ova
+
+# python/node generic
+__pycache__/
+node_modules/
+.venv/

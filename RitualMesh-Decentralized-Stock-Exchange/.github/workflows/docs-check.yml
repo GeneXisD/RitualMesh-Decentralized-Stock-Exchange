@@ -1,0 +1,17 @@
+name: docs-check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  docs-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify key docs exist
+        run: |
+          test -f README.md
+          test -f docs/PROJECT_STATUS.md
+          test -f docs/ROADMAP.md
+          test -f docs/clearinghouse/build-notes.md
