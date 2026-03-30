@@ -1,0 +1,8 @@
+RITUALKEY_IDENTITY
+creator=Victor Jose Corral
+project=RitualMesh
+legacy=Ian Patrick Ahern
+dedication=Krista Lynn Clark
+lineage=Maria Elena Corral
+inspiration=Seth Godin
+purpose=Build a better world through decentralized infrastructure
