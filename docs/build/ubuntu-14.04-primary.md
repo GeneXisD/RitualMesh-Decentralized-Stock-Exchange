@@ -1,20 +1,22 @@
-# Ubuntu 14.04 Primary Build
+====================================
+RitualMesh Node Configuration
+====================================
 
-## Purpose
-Build the authoritative federated node on the Intel host.
+[HOST INFO]
+Hostname: Victors-MacBook-Pro.local
+IP: 192.168.0.9
+Username: clearinghouse
+Password: 
 
-## Initial choices
-- use entire disk
-- do not encrypt home
-- do not use Landscape
-- software selection: standard system utilities only
+[PORTS]
+ClearingHouse API: 4000
+ClearingHouse RPC: 8332
+Counterparty: 4001
+Wallet RPC: 8332
 
-## Recommended identity
-- username: `clearinghouse`
-- hostname: `ritualmesh-primary`
+[NOTES]
+Primary Federated Node: YES
+Host Role: Intel Mac
+Secondary Host: M4 Mac (support / validation)
 
-## Immediate post-install
-1. take a snapshot named `clean-install`
-2. record users, passwords, ports, and paths
-3. install only required dependencies
-4. keep build notes in `docs/build/clearinghouse-build-log.md`
+====================================
