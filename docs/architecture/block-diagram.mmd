@@ -1,0 +1,11 @@
+graph TD
+A[Sovereign Core] --> B[ClearingHouse]
+B --> C[Identity]
+B --> D[Routing]
+B --> E[Storage]
+B --> F[Policy]
+C --> G[Node]
+D --> G
+E --> G
+F --> G
+G --> H[Cluster Farm Nodes]
