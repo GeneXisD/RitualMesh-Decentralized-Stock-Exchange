@@ -1,24 +1,22 @@
 # RitualMesh Decentralized Stock Exchange
 
-RitualMesh DSE is a dual-host, heterogeneous, decentralized financial infrastructure project centered on a canonical ClearingHouse-based federated node and a secondary validation, synchronization, and orchestration host.
+RitualMesh is a dual-host decentralized financial infrastructure centered on a canonical ClearingHouse node (Intel) and a validation node (M4), evolving into a layered, distributed system.
 
-## Current architecture
-- **Intel host + Ubuntu 14.04** = authoritative federated node
-- **M4 Mac** = secondary ClearingHouse-capable support host
-- **Android legacy shell stack** = optional mobile control / helper node
+## Architecture (Layered)
+1. ClearingHouse Core — canonical execution
+2. Validation Layer — state verification (M4)
+3. Swarm Layer — distributed node behavior
+4. Mesh Layer — overlay network (10.x)
+5. Agent Layer — intent-driven orchestration
 
-## Core design
-- canonical primary execution on the Intel-hosted Ubuntu 14.04 environment
-- secondary validation, synchronization, and future failover support on the M4
-- reserved `scripts/sync/` and `scripts/verify/` foundations for dual-host coordination
-- future liquidity / reverse-repo style design space documented as an extension layer
-- future bridge and market-interface architecture documented separately from the core node bring-up
+## Control Model
+- Centralized intent
+- Decentralized execution
 
-## Immediate priority
-1. bring up the canonical ClearingHouse federated node on Ubuntu 14.04
-2. record all users, ports, paths, snapshots, and manual edits
-3. compare and mirror from the M4 secondary host
-4. stabilize the primary build before implementing deeper extensions
+## Docs
+- Mission: docs/mission/mission-definition.md
+- RFC: docs/rfc/RFC-000-system-overview.md
+- Whitepaper: docs/whitepaper/ritualmesh-whitepaper.md
 
-## Principle
-The primary node determines canonical truth. The secondary host protects continuity, validates state, and prepares future orchestration.
+## Status
+Primary priority: stabilize canonical node before deeper layer implementation.
